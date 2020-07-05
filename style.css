@@ -1,0 +1,119 @@
+
+body{
+    font-size:14px;
+    font-family:Verdana,sans-serif;
+    margin:0;    
+}
+header{
+    position:absolute;
+    width:100%;
+    top:0;
+    z-index:10000;
+    padding:0;
+}
+header h1{
+    margin-top:0;
+}
+/* menu */
+#menu{
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    background-color: rgba(0,0,0,.9);
+    color:#fff;
+    display:none;
+
+}
+#menu.shown{
+    display:block;
+}
+#menu ul{
+    list-style: none;
+    margin: 0;
+    padding: 10px 20px;
+}
+#menu li{
+    line-height:2;
+}
+#menu a{
+    text-decoration:none;
+    color:inherit;
+}
+#openmenu{
+    float: right;
+    font-size: 24px;
+    cursor: pointer;
+    color:white;
+    margin-right:10px;
+}
+#closemenu{
+    padding:15px;
+    float:right;
+    cursor:pointer;
+}
+/* container */
+.container{  
+    margin:30 auto;
+}
+/* name */
+.name p {
+    color:white;
+    position:absolute;
+    top:30px;
+    left:50px;
+    font-size:2em;
+    font-weight:bold;
+ }
+.name{
+    position:relative;
+}
+.name img{
+    width:100%;
+    vertical-align: bottom;
+}
+#nam{
+    position:absolute;
+    font-size:1em;
+    font-weight:normal
+}
+/* main */
+h1{
+    background-color: gray;
+    margin-top:0;
+    color:white;
+    font-size:20px;
+    padding-left:5px;
+    font-weight:bolder;
+    text-align: left;
+}
+#mypage{
+    text-align:left;
+}
+.insta{
+    justify-content: center;
+    text-decoration-color: darkblue;
+    text-decoration-line: none;   
+}
+#pagetop {
+    float:right;
+    position:relative;
+    margin-right:10px;
+}
+
+/* changesize */
+@media(min-width:990px){
+   .name{
+       display:flex;
+       margin:0 auto;
+   }
+   .main{
+       width:60%;
+   }
+   .info{
+       width:40%;
+   }
+   #intro{
+    margin-top: 24px;
+   }
+}

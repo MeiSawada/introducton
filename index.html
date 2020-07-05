@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" 
+          type="text/css" 
+          href="style.css">
+    <meta name="viewport" 
+        content="width=device-width,initial-scale=1">
+    <title>自己紹介</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" integrity="sha256-UzFD2WYH2U1dQpKDjjZK72VtPeWP50NoJjd26rnAdUI=" crossorigin="anonymous" />
+</head>
+<body>
+    <header>
+        <div class="container">
+            <i id="openmenu" class="fas fa-bars"></i>
+            <nav id="menu" >
+            <i id="closemenu" class="fas fa-chevron-up"></i>
+               <ul>
+                <li><a href = "#intro" >Introduction</a></li> 
+                <li><a href = "#programmingLanguages">Programming languages</a></li>
+                <li><a href = "#hobby" >Hobbies</a></li>
+                <li><a href = "#access">Access</a> </li>
+               </ul> 
+            </nav>
+            <h1 id="mypage">My Page</h1>
+        </div>
+    </header>
+
+    <div class="name"> 
+        <div class="info">
+            <p>澤田芽依</p><br>
+            <p id="nam">さわだめい</p>
+            <img src="france.jpg">
+        </div>
+
+
+<div class="main">
+    <section>
+        <h1 id="intro">Introduction</h1>
+        <ul>
+            <li>福島県郡山市出身</li>
+            <li>2019年:東京理科大学基礎工学部材料工学科入学</li>
+            <li>2020年:プログラミングを始める</li>
+        </ul>
+    </section>
+
+    <section>
+        <h1 id="programmingLanguages">Programming</h1>
+        <ul>
+            <li>HTML/CSS</li>
+            <li>Vue.js</li>
+        </ul>
+    </section>
+    
+    <section>
+        <h1 id="hobby">Hobbies</h1>
+        <ul>
+            <li>ボルダリング</li>
+            <li>邦ロック（ONE OK ROCK,米津玄師,RADWIMPS)</li>
+            <li>古着屋,カフェ巡り</li>
+            <li>旅行</li>
+        </ul>
+    </section>
+    
+    <section>
+        <h1 id="access">Access</h1>
+        <ul>
+            <li> <a class="insta" href="https://www.instagram.com/do_ra_.s">Instagram
+                <i class="fab fa-instagram"></i></a></li>
+                </ul>
+            </section>
+            
+            <a id="pagetop" href="#mypage">Page top</a>
+
+</div>
+            
+<script>
+    (function(){
+'use strict';
+    
+
+    var openMenu = document.getElementById('openmenu');
+    var closeMenu = document.getElementById('closemenu');
+    var menu = document.getElementById('menu');
+
+    openMenu.addEventListener('click',function(){
+     menu.classList.add('shown'); 
+    });
+    closeMenu.addEventListener('click',function(){
+     menu.classList.remove('shown'); 
+    });
+    })();
+</script>
+</body>
+</html>
